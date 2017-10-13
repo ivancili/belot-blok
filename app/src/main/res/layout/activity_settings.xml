@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.cili.ivan.belotblock.SettingsActivity">
+
+    <include
+        android:id="@+id/settings_action_bar"
+        layout="@layout/toolbar_settings"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25sp"
+            android:gravity="center_vertical"
+            android:text="@string/general"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickedGameValue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/game_points"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text"/>
+
+            <TextView
+                android:id="@+id/settings_game_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/default_game_value"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/CustomDivider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/keep_screen_on"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text"/>
+
+            <CheckBox
+                android:id="@+id/settings_cb_screen_on"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/accent"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:onClick="clickedKeepScreenOn"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/CustomDivider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickedResetAllData"
+            android:text="@string/reset_data"
+            android:textAllCaps="false"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_background"
+    android:orientation="vertical"
+    android:paddingBottom="5sp"
+    android:paddingEnd="30sp"
+    android:paddingStart="30sp"
+    android:paddingTop="20sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_story"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/dialog_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="@string/contact"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/dialog_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="@string/all_right_reserved"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/dialog_text"/>
+
+    <Button
+        android:id="@+id/dialog_info_ok"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="15sp"
+        android:text="@string/ok"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/dialog_button"/>
+
+</LinearLayout>

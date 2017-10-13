@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_extra_large">40sp</dimen>
+
+    <dimen name="divider">1sp</dimen>
+
+    <dimen name="dialog_title">18sp</dimen>
+    <dimen name="dialog_input">16sp</dimen>
+    <dimen name="dialog_text">16sp</dimen>
+    <dimen name="dialog_button">16sp</dimen>
+</resources>

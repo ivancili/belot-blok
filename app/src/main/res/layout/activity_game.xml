@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cili.ivan.belotblock.GameActivity">
+
+    <include
+        android:id="@+id/game_action_bar"
+        layout="@layout/toolbar_home"
+        />
+
+    <LinearLayout
+        android:id="@+id/game_action_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintLeft_toLeftOf="@+id/gridLayout"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/game_game_btn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1sp"
+            android:layout_weight="1"
+            android:background="@color/accent"
+            android:text="@string/game"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text"/>
+
+        <Button
+            android:id="@+id/game_calling_btn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1sp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/calling"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/n1"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/one"/>
+
+        <Button
+            android:id="@+id/n2"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/two"/>
+
+        <Button
+            android:id="@+id/n3"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/three"/>
+
+        <Button
+            android:id="@+id/n4"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/four"/>
+
+        <Button
+            android:id="@+id/n5"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/five"/>
+
+        <Button
+            android:id="@+id/n6"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/six"/>
+
+        <Button
+            android:id="@+id/n7"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/seven"/>
+
+        <Button
+            android:id="@+id/n8"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/eight"/>
+
+        <Button
+            android:id="@+id/n9"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/nine"/>
+
+        <Button
+            android:id="@+id/game_clear_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="1sp"
+            android:layout_rowWeight="1"
+            android:background="@drawable/button_reset"
+            android:onClick="resetButtonClicked"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text"/>
+
+        <Button
+            android:id="@+id/n0"
+            style="@style/CustomBorderlessNumberButton"
+            android:onClick="numberClicked"
+            android:text="@string/zero"/>
+
+        <Button
+            android:id="@+id/game_save_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="1sp"
+            android:layout_rowWeight="1"
+            android:background="@drawable/button_backspace"
+            android:onClick="clickedSaveButton"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text"/>
+
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/game_session_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/gridLayout"
+        app:layout_constraintTop_toBottomOf="@+id/game_action_bar"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/game_action_buttons"
+        app:layout_constraintLeft_toLeftOf="@+id/gridLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_action_bar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="@string/current_game"
+            android:textAllCaps="true"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calling"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+                <TextView
+                    android:id="@+id/game_calling_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/game"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+                <TextView
+                    android:id="@+id/game_game_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/CustomGameDividerVertical"/>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calling"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+                <TextView
+                    android:id="@+id/game_calling_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/game"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+                <TextView
+                    android:id="@+id/game_game_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_medium"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

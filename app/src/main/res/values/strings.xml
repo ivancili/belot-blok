@@ -1,0 +1,63 @@
+<resources>
+    <!--  -->
+
+    <!-- General -->
+    <string name="app_name">Belot blok</string>
+    <string name="title_activity_settings">Postavke</string>
+    <string name="title_activity_home">Belot blok</string>
+    <string name="title_activity_game">Detalji igre</string>
+    <string name="all_right_reserved">© 2017. TARS inc. Sva prava zadržana.</string>
+    <string name="contact">Kontakt: ivan.ilich@hotmail.com</string>
+    <string name="app_story">Aplikacija je nastala blabla.....</string>
+
+    <!-- HomeActivity -->
+    <string name="home_empty_message">Trenutno nema započetih igara</string>
+
+    <!-- Menu -->
+    <string name="menu_settings">Postavke</string>
+    <string name="menu_info">Info</string>
+
+    <!-- Dialog -->
+    <string name="insert_names">Upišite imena timova</string>
+    <string name="first_team">Prvi tim</string>
+    <string name="second_team">Drugi tim</string>
+
+    <!-- Numbers -->
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+    <!-- Generic -->
+    <string name="save">Spremi</string>
+    <string name="cont">Nastavi</string>
+    <string name="ok">OK</string>
+    <string name="reset">C</string>
+    <string name="blabla">blaaablaaa</string>
+    <string name="general">Općenito</string>
+    <string name="double_points">Dupli bodovi:</string>
+    <string name="reset_data">Resetiraj sve igre</string>
+    <string name="reset_sessions">Resetiraj sve partije</string>
+    <string name="keep_screen_on">Gašenje zaslona tijekom igre:</string>
+    <string name="warning">Svi podatci će biti obrisani. Želite li nastaviti?</string>
+    <string name="cancel">prekid</string>
+    <string name="game_points">Vrijednost igre:</string>
+    <string name="default_game_value">1001</string>
+    <string name="prompt_new_value">Unesite novu vrijednost za igru</string>
+    <string name="new_value">Nova vrijednost</string>
+    <string name="click_once_again">Kliknite još jednom za povratak</string>
+    <string name="minus">-</string>
+    <string name="versus">Team A vs. Team B</string>
+    <string name="total_score">ukupan rezultat</string>
+    <string name="current_session">trenutna partija</string>
+    <string name="current_game">trenutna igra</string>
+    <string name="game">igra</string>
+    <string name="calling">zvanje</string>
+
+</resources>
